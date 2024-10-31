@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./globals.css";  // Import global CSS here
+import Image from "next/image";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header>
+          <div className="container">
+            <a className="flex title-font items-center">
+              <div className="avatar">
+                <Image
+                  src="/me1.jpg"
+                  alt="logo"
+                  width={80}
+                  height={80}
+                  className="avatar-img"
+                />
+              </div>
+              <h1>Portfolio</h1>
+            </a>
+            <nav>
+              <Link href="/">Home</Link>
+              <Link href="/about">About</Link>
+              <Link href="/skills">Skills</Link>
+              <Link href="/projects">Projects</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/contact">Contact</Link>
+            </nav>
+          </div>
+        </header>
+        {children}
+      </body>
     </html>
   );
 }

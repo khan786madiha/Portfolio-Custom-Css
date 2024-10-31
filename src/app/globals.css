@@ -2,32 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Global reset and default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  
+  html, body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    scroll-behavior: smooth;
   }
-}
+  
+  /* Header and navigation styles */
+  header {
+    background-color: #1f1f1f;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .avatar img {
+    border-radius: 50%;
+    border: 2px solid #ff7f50;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #ff7f50;
+    transition: color 0.5s ease;
+  }
+  
+  h1:hover {
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    font-size: 1.5rem;
+    color: #ff7f50;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  /* Body background */
+  body {
+    background: linear-gradient(to right, #6a0dad, #000, #2f4f4f);
+  }
+  

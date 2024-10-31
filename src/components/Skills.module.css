@@ -1,0 +1,67 @@
+/* Skills.module.css */
+
+/* Main section styling */
+.skillsSection {
+    background: linear-gradient(to right, #4a148c, #000); /* Gradient background */
+    padding: 6rem 0; /* Top and bottom padding */
+}
+
+/* Title styling */
+.skillsTitle {
+    color: white; /* Title text color */
+    font-size: 3rem; /* Font size */
+    text-align: center; /* Center alignment */
+    padding-bottom: 2rem; /* Space below the title */
+}
+
+/* Skill card styling */
+.skillCard {
+    display: flex; /* Flexbox for card layout */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 2rem; /* Padding inside the card */
+    border-radius: 0.5rem; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    position: relative; /* For absolute positioning of gradient */
+}
+
+/* Hover effect for skill card */
+.skillCard:hover {
+    transform: scale(1.05); /* Scale up card on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Icon container styling */
+.iconContainer {
+    display: flex; /* Flex layout for icon */
+    justify-content: center; /* Center the icon */
+    align-items: center; /* Center vertically */
+    width: 6rem; /* Fixed width */
+    height: 6rem; /* Fixed height */
+    border-radius: 50%; /* Circle shape */
+    margin-bottom: 1rem; /* Space below the icon */
+}
+
+/* Overlay gradient styling */
+.overlayGradient {
+    position: absolute; /* Overlay for gradient effect */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    right: 0; /* Stretch to the right */
+    bottom: 0; /* Stretch to the bottom */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Gradient effect */
+    border-radius: 0.5rem; /* Rounded corners */
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+/* Overlay hover effect */
+.skillCard:hover .overlayGradient {
+    opacity: 0.4; /* More visible on hover */
+}
+
+/* Description text styling */
+.skillDescription {
+    text-align: center; /* Center alignment for text */
+    color: white; /* White text */
+    margin: 0; /* Remove margin */
+}

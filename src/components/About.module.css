@@ -1,0 +1,67 @@
+/* About.module.css */
+
+.heroSection {
+    color: #ffd700;
+    background: linear-gradient(to right, #5e00a0, #000000, #444444);
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profileContainer {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .profileImage {
+    border-radius: 50%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profileImage:hover {
+    transform: scale(1.05);
+  }
+  
+  .title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    color: #ff007f;
+  }
+  
+  .subtitle {
+    color: #ffd700;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .socialButton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b5998;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    color: white;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .socialButton:hover {
+    background-color: #ff007f;
+    transform: scale(1.1);
+  }
+  

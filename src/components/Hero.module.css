@@ -1,0 +1,49 @@
+/* Hero.module.css */
+
+.heroSection {
+    color: #ffd700;
+    background: linear-gradient(to right, #5e00a0, #000000, #444444);
+}
+
+.title {
+    color: #ffd700;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #ffffff;
+}
+
+.description {
+    color: #00ff00;
+}
+
+.githubButton {
+    background-color: #ff007f;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease;
+}
+
+.githubButton:hover {
+    background-color: #ffcc00;
+}
+
+.linkedinButton {
+    background-color: #0066cc;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+}
+
+.linkedinButton:hover {
+    background-color: #ffcc00;
+}
+
+.imageContainer {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profileImage {
+    border-radius: 50%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}

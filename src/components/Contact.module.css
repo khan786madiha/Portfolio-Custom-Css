@@ -1,0 +1,69 @@
+/* Contact.module.css */
+
+/* Main section styling */
+.contactSection {
+    background-color: #111; /* Dark background */
+    padding: 2rem 0;
+}
+
+/* Card styling */
+.contactCard {
+    background-color: #1e1e1e; /* Darker card background */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 2rem;
+}
+
+/* Contact info icons */
+.contactIcons {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    margin-bottom: 1.5rem; /* Space between info and form */
+}
+
+/* Icon container styling */
+.iconContainer {
+    display: flex; /* Flex layout */
+    align-items: center; /* Center vertically */
+    margin-bottom: 1rem; /* Space between icons */
+}
+
+/* Styling for paragraphs in the icon container */
+.iconContainer p {
+    margin-left: 1rem; /* Space between icon and text */
+    color: white; /* White text */
+}
+
+/* Form input styling */
+.inputField {
+    display: block; /* Block element */
+    width: 100%; /* Full width */
+    border: 2px solid #ccc; /* Light gray border */
+    background: transparent; /* Transparent background */
+    padding: 0.5rem; /* Padding */
+    border-radius: 0.375rem; /* Rounded corners */
+    transition: border-color 0.2s ease; /* Smooth transition */
+}
+
+/* Input focus effect */
+.inputField:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Button styling */
+.submitButton {
+    width: 100%; /* Full width */
+    border-radius: 0.375rem; /* Rounded corners */
+    background: linear-gradient(to right, #0ea5e9, #3b82f6); /* Gradient background */
+    color: white; /* White text */
+    padding: 0.5rem; /* Padding */
+    font-weight: 500; /* Medium font weight */
+    text-transform: uppercase; /* Uppercase text */
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+/* Button hover effect */
+.submitButton:hover {
+    background: linear-gradient(to right, #3b82f6, #0ea5e9); /* Reverse gradient on hover */
+}
