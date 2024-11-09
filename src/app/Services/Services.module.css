@@ -1,0 +1,179 @@
+/* Main section styling */
+.servicesSection {
+    background: linear-gradient(to right, #6a1b9a, #000, #424242);
+    position: relative;
+    overflow: hidden;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Overlay effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Title styling */
+.title {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    width: 100%; /* Full width for title */
+}
+
+/* Card container */
+.serviceCardsContainer {
+    display: flex;
+    flex-direction: column; /* Default is column for smaller screens */
+    gap: 2rem; /* Space between cards */
+    justify-content: space-around; /* Spacing for better layout */
+    width: 100%; /* Full width on smaller screens */
+}
+
+@media (min-width: 1025px) {
+    .serviceCardsContainer {
+        flex-direction: row; /* Row direction for large screens */
+    }
+}
+
+/* Card styling */
+.serviceCard {
+    flex: 1 1 30%; /* Allow cards to take equal width, adjust based on space */
+    max-width: 30%; /* Max width for each card */
+    transition: transform 0.3s ease-in-out;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Card hover effect */
+.serviceCard:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon container styling */
+.iconContainer {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Button styling */
+.contactButton {
+    background: linear-gradient(to right, #ff9800, #f44336);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+}
+
+/* Button hover effect */
+.contactButton:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #e64a19, #d32f2f);
+}
+
+/* Responsive Styles */
+
+/* Mobile Styles (max-width: 600px) */
+@media (max-width: 600px) {
+    .servicesSection {
+        padding: 4rem 1rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .serviceCard {
+        width: 100%; /* Full width for mobile */
+        max-width: 100%;
+    }
+
+    .iconContainer {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .contactButton {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+        margin-top: 1rem;
+    }
+}
+
+/* Tablet Styles (min-width: 601px and max-width: 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .servicesSection {
+        padding: 5rem 1.5rem;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .serviceCard {
+        width: 100%; /* Full width for tablet */
+        max-width: 100%;
+    }
+
+    .iconContainer {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .contactButton {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.2rem;
+        margin-top: 1.5rem;
+    }
+}
+
+/* Laptop/Desktop Styles (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .servicesSection {
+        padding: 6rem 4rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .serviceCardsContainer {
+        display: flex;
+        justify-content: space-around; /* Evenly space cards on larger screens */
+    }
+
+    .serviceCard {
+        width: 30%; /* Make each card take up 30% of the available width */
+        max-width: 30%;
+    }
+
+    .iconContainer {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .contactButton {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+        margin-top: 2rem;
+    }
+}

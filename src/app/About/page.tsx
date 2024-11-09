@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Typewriter from 'typewriter-effect';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
-import styles from './About.module.css'; // Importing custom CSS module
-
+import styles from './About.module.css';
+import style from "./About.module.css";
 const About = () => {
   return (
     <>

@@ -1,0 +1,90 @@
+
+
+/* General styles for the header and navigation */
+.header {
+  background-color: #1f1f1f;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatarTitleContainer {
+  display: flex;
+  align-items: center;
+}
+
+.avatar img {
+  border-radius: 50%;
+  border: 2px solid #ff7f50;
+  margin-right: 10px; /* Space between logo and title */
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #ff7f50;
+  transition: color 0.5s ease;
+}
+
+.title:hover {
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  font-size: 1.5rem;
+  color: #ff7f50;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the elements vertically on smaller screens */
+    align-items: center; /* Center everything */
+  }
+
+  .avatarTitleContainer {
+    justify-content: center; /* Center the logo and title */
+  }
+
+  .title {
+    font-size: 2rem; /* Adjust font size on smaller screens */
+  }
+
+  .nav {
+    flex-direction: column; /* Stack the navbar items vertically */
+    gap: 15px; /* Reduce gap between navbar items */
+    margin-top: 20px; /* Add space above the navbar */
+  }
+
+  .nav a {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media query for very small screens like mobile portrait */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem; /* Make the title even smaller */
+  }
+
+  .nav a {
+    font-size: 1rem; /* Reduce font size for small screens */
+  }
+}

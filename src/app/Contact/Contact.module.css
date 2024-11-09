@@ -12,6 +12,8 @@
     border-radius: 0.5rem; /* Rounded corners */
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     padding: 2rem;
+    max-width: 800px; /* Set max width for responsiveness */
+    margin: 0 auto; /* Center the card */
 }
 
 /* Contact info icons */
@@ -29,7 +31,7 @@
 }
 
 /* Styling for paragraphs in the icon container */
-.iconContainer p {
+.iconText {
     margin-left: 1rem; /* Space between icon and text */
     color: white; /* White text */
 }
@@ -66,4 +68,49 @@
 /* Button hover effect */
 .submitButton:hover {
     background: linear-gradient(to right, #3b82f6, #0ea5e9); /* Reverse gradient on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contactCard {
+        padding: 1.5rem; /* Reduce padding on smaller screens */
+    }
+
+    .contactIcons {
+        margin-bottom: 1rem; /* Adjust margin */
+    }
+
+    .iconContainer {
+        margin-bottom: 0.75rem; /* Adjust space between icons */
+    }
+
+    .inputField, .submitButton {
+        padding: 0.75rem; /* Increase padding for touchscreens */
+    }
+
+    .title {
+        font-size: 1.5rem; /* Adjust text size for smaller screens */
+    }
+
+    .iconText {
+        font-size: 1.25rem; /* Adjust paragraph text size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contactCard {
+        padding: 1rem; /* Further reduce padding on very small screens */
+    }
+
+    .inputField, .submitButton {
+        padding: 0.5rem; /* Further adjust padding for smaller devices */
+    }
+
+    .title {
+        font-size: 1.2rem; /* Smaller text for very small screens */
+    }
+
+    .iconText {
+        font-size: 1rem; /* Smaller paragraph text */
+    }
 }
